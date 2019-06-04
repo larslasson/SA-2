@@ -1,10 +1,10 @@
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items')
+function toggleHamburger() {
+  const navs = document.querySelectorAll('.Navbar_Items')
   
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+  navs.forEach(nav => nav.classList.toggle('Navbar_ToggleShow'));
 }
 
-document.querySelector('.Navbar__Link-toggle').addEventListener('click', classToggle);
+document.querySelector('.Navbar_Link-toggle').addEventListener('click', toggleHamburger);
 
 
 

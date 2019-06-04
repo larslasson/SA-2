@@ -39,19 +39,3 @@ function toggleDisplay1() {
   
   document.getElementById("accordion3").addEventListener("click", toggleDisplay3);
 
-  var txtStrings = ['We are going to Mars...', 'Come with us?'];
-
-        textSequence(0);
-        function textSequence(i) {
-
-            if (txtStrings.length > i) {
-                setTimeout(function() {
-                    document.getElementById("intro_txt").innerHTML = txtStrings[i];
-                    textSequence(++i);
-                }, 4000); // 1 second (in milliseconds)
-
-            } else if (txtStrings.length == i) { // Loop
-                textSequence(0);
-            }
-
-        }

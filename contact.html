@@ -4,79 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="keywords" content="NASA, 2020 Mars, Mars Mission, contact NASA, contact">
+    <meta name="description" content="Here you can send questions to us at NASA regarding our 2020 Mars Mission">
+
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     
 
 
-    <title>Document</title>
+    <title>Contact NASA</title>
 </head>
 <body>
     <div class="Navbar">
-        <div class="Navbar__Link Navbar__Link-brand">
+        <div class="Navbar_Link Navbar_Link-brand">
             <img src="images/Web 1920 – 1.png" alt="Nasa_logo">
             </div>
-            <div class="Navbar__Link Navbar__Link-toggle">
+            <div class="Navbar_Link Navbar_Link-toggle">
             <i class="fa fa-bars"></i>
             </div>
-        <nav class="Navbar__Items Navbar__Items--right">
-        <a href="index.html" class="active"><div class="Navbar__Link">
+        <nav class="Navbar_Items Navbar_Items-right">
+        <a href="index.html" class="active"><div class="Navbar_Link">
             Home
             </div></a>
 
-            <a href="rover.html"><div class="Navbar__Link">
+            <a href="rover.html"><div class="Navbar_Link">
             Rover
             </div></a>
 
-            <a href="crew.html"><div class="Navbar__Link">
+            <a href="crew.html"><div class="Navbar_Link">
                 Crew
                 </div></a>
                 
-            <a href="contact.html"><div class="Navbar__Link">
+            <a href="contact.html"><div class="Navbar_Link">
                 Contact
                 </div></a>
             
         </nav>
     </div>
-    
+
      <div class="contact-background">
-     <div class="container-contact">
-			<div class="wrap-contact">
-				<form class="contact-form validate-form">
-					<span class="contact-title">
-						Contact Us
-					</span>
+            <div class="container-contact">
+                   <div class="wrap-contact">
+                       <form class="contact-form validate-form" onsubmit='return formValidation()'>
+                           <span class="contact-title">
+                               Contact Us
+                           </span>
+                           <span id="head"></span><br><br><br>
+                           <div class="wrap-input validate-input" data-validate="Name is required">
+                               <input class="input"  id="contact-name" type="text" name="name">
+                               <span class="focus-input" data-placeholder="NAME"></span>
+                               
+                           </div>
+                           <span class="contact_error" id="p1"></span><br><br><br>
+                           <div class="wrap-input validate-input" data-validate = "Valid email is required">
+                               <input class="input" id="contact-email" type="text" name="email">
+                               <span class="focus-input" data-placeholder="EMAIL"></span>
+                               
+                           </div>
+                           <span class="contact_error" id="p2"></span><br><br><br>
+       
+                           <div class="wrap-input validate-input" data-validate = "Message is required">
+                               <textarea class="input" id="contact-message" name="message"></textarea>
+                               <span class="focus-input" data-placeholder="MESSAGE"></span>
+                               
+                           </div>
+                           <span class="contact_error" id="p3"></span><br><br><br>
 
-					<div class="wrap-input validate-input" data-validate="Name is required">
-						<input class="input"  id="contact-name" type="text" name="name">
-						<span class="focus-input" data-placeholder="NAME"></span>
-					</div>
-
-					<div class="wrap-input validate-input" data-validate = "Valid email is required">
-						<input class="input" id="contact-email" type="text" name="email">
-						<span class="focus-input" data-placeholder="EMAIL"></span>
-					</div>
-
-					<div class="wrap-input validate-input" data-validate = "Message is required">
-						<textarea class="input" id="contact-message" name="message"></textarea>
-						<span class="focus-input" data-placeholder="MESSAGE"></span>
-					</div>
-
-					<div class="container-contact-form-btn">
-						
-							<div class="contact-form-bgbtn"></div>
-							<button class="contact-form-btn" id="submitContact">
-								Send Message
-							</button>
-						
-					</div>
-				</form>
-			</div>
-		</div>
-     </div>
-     
+                           <div class="container-contact-form-btn">
+                               
+                                   
+                                   <input id="submit" type='submit' value='Submit'>
+                                
+                           </div>
+                       </form>
+                   </div>
+               </div>
+            </div>
 
      
 
