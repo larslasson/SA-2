@@ -705,6 +705,12 @@ footer h3 {
   
 }
 
+.accordion-rover:hover{
+  
+  cursor: pointer;
+  
+}
+
 .accordion-rover h3 {
   font-size: 1.5em;
   margin: 1% 0;
@@ -741,6 +747,10 @@ footer h3 {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+}
+
+.circle:hover {
+  cursor: pointer;
 }
 
 #circle1 {
@@ -1022,6 +1032,11 @@ background-image: url('images/dark_space.jpg');
 
   .mobile_container h3 {
     font-size: 1.3em;
+  }
+
+  .mobile_container h2 {
+    font-size: 1.4em;
+    padding: 10% 0;
   }
 
   .rover_mobile_img {
